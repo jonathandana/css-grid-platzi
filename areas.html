@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Areas</title>
+    <style>
+        body{margin: 0}
+        .item{
+            background-color: lightblue;
+            border: 1px solid red;
+        }
+        .container{
+            display: grid;
+                            /*Row*/             /*Columns*/
+            /*grid-template:repeat(3,1fr) / 200px 1fr;*/
+            grid-template:repeat(3,1fr) / 200px 1fr;
+            grid-gap: 10px;
+            height: 100vh;
+            grid-template-areas: "header header"
+                                 "left content"
+                                 "footer footer" ;
+        }
+
+        .header{grid-area: header;}
+        .left{grid-area: left;}
+        .content{grid-area: content;}
+        .footer{grid-area: footer;}
+    </style>
+</head>
+
+<body>
+    <section class="container">
+        <div class="item header">Header</div>
+        <div class="item left">Left</div>
+        <div class="item content">Content</div>
+        <div class="item footer">Footer</div>
+    </section>
+</body>
+</html>
