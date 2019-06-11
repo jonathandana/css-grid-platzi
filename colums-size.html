@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Columns Size</title>
+    <style>
+        body{margin: 0}
+
+        .item{
+            background: lightblue;
+            border: 1px solid red;
+            padding: 10px;
+        }
+
+        .container{
+            display: grid;
+            /*Row*/             /*Columns*/
+            /*grid-template:repeat(3,1fr) / 200px 1fr;*/
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(4,1fr);
+            grid-gap: 10px;
+            height: 100vh;
+        }
+
+        .item:nth-of-type(1){
+            background: blue;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+        .item:nth-of-type(8){
+            background: red;
+            /*grid-column: 1 / span 2;*/
+            grid-column: 1 / -1;
+
+        }
+
+        .item:nth-of-type(7){
+            background: orange;
+            grid-column: 2 / 4;
+        }
+
+    </style>
+</head>
+
+<body>
+<section class="container">
+    <div class="item">item #1</div>
+    <div class="item">item #2</div>
+    <div class="item">item #3</div>
+    <div class="item">item #4</div>
+    <div class="item">item #5</div>
+    <div class="item">item #6</div>
+    <div class="item">item #7</div>
+    <div class="item">item #8</div>
+    <div class="item">item #9</div>
+    <div class="item">item #10</div>
+    <div class="item">item #11</div>
+    <div class="item">item #12</div>
+</section>
+</body>
+</html>
