@@ -4,6 +4,8 @@ Training css grid
 
 # examples 
 
+https://jonathandana.github.io/css-grid-platzi/platzi/
+
 https://jonathandana.github.io/css-grid-platzi/instagram/
 
 https://jonathandana.github.io/css-grid-platzi/pinteres/
