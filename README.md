@@ -6,6 +6,8 @@ Training css grid
 
 https://jonathandana.github.io/css-grid-platzi/instagram/
 
+https://jonathandana.github.io/css-grid-platzi/pinteres/
+
 https://jonathandana.github.io/css-grid-platzi/areas.html
 
 https://jonathandana.github.io/css-grid-platzi/colums-size.html
